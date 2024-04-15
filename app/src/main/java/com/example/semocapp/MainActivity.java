@@ -28,8 +28,10 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.bottom_home:
                     return true;
                 case R.id.bottom_calendar:
-                    startActivity(new Intent(getApplicationContext(), Programmation.class));
-                    overridePendingTransition(R.anim.right, R.anim.left);
+
+                    Intent intent = new Intent(getApplicationContext(), Programmation.class);
+                    startActivity(intent);
+
 
                     finish();
                     return true;

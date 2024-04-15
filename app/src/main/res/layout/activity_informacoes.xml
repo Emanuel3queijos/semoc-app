@@ -1,27 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Information">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Informacoes"
-        android:textColor="@color/cianGreen"
-        android:layout_centerInParent="true"
-        android:textSize="36sp" />
+
+
+    <ImageView
+        android:id="@+id/semocImg"
+        android:layout_width="380dp"
+        android:layout_height="71dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/semoc" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/semocImg"
+        android:layout_marginTop="-2dp"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:layout_gravity="center_horizontal"
+
+                android:text="SEMANA DE MOBILIZAÇÃO CIENTÍFICA"
+                android:textColor="@color/blackBlue"
+                android:textFontWeight="1000"
+                android:textSize="18dp" />
+
+
+            <TextView
+                android:id="@+id/paragraphTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:justificationMode="inter_word"
+
+                android:padding="16dp"
+                android:text="@string/semoc_info_1"
+                android:textColor="@android:color/black"
+                android:textFontWeight="1000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/paragraphTextView2"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:justificationMode="inter_word"
+                android:padding="16dp"
+                android:text="@string/semoc_info_2"
+                android:textColor="@android:color/black"
+                android:textFontWeight="1000"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="monospace"
+                android:justificationMode="inter_word"
+
+                android:text="APRESENTAÇÃO"
+                android:textColor="@color/blackBlue"
+                android:textFontWeight="1000"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:justificationMode="inter_word"
+                android:padding="16dp"
+                android:text="adicionar conteudo"
+                android:textColor="@android:color/black"
+                android:textFontWeight="1000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="monospace"
+                android:text="TEMATICA CENTRAL"
+                android:textColor="@color/blackBlue"
+                android:textFontWeight="1000"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="100dp"
+                android:fontFamily="monospace"
+                android:justificationMode="inter_word"
+                android:padding="16dp"
+                android:text="adicionar conteudo"
+                android:textColor="@android:color/black"
+                android:textFontWeight="1000"
+
+                android:textSize="16sp" />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="30dp"
-        android:layout_marginEnd="30dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
         android:background="@drawable/bottom_background"
         android:elevation="2dp"
         app:itemIconSize="30dp"
@@ -29,4 +138,5 @@
         app:itemRippleColor="@android:color/transparent"
         app:labelVisibilityMode="unlabeled"
         app:menu="@menu/bottom_menu" />
+
 </RelativeLayout>

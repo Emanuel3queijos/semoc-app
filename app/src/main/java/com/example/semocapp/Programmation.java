@@ -26,19 +26,16 @@ public class Programmation extends AppCompatActivity {
                     return true;
                 case R.id.bottom_home:
                     startActivity(new Intent(getApplicationContext(), MainActivity.class));
-                    overridePendingTransition(R.anim.right, R.anim.left);
 
                     finish();
                     return true;
                 case R.id.inscription:
                     startActivity(new Intent(getApplicationContext(), Inscriptions.class));
-                    overridePendingTransition(R.anim.right, R.anim.left);
 
                     finish();
                     return true;
                 case R.id.information:
                     startActivity(new Intent(getApplicationContext(), Information.class));
-                    overridePendingTransition(R.anim.right, R.anim.left);
 
                     finish();
                     return true;

@@ -1,9 +1,9 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.SemocApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.SemocApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/cianGreen</item>
-        <item name="colorPrimaryVariant">@color/cianGreen</item>
+        <item name="colorPrimary">@color/blackBlue</item>
+        <item name="colorPrimaryVariant">@color/blackBlue</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
