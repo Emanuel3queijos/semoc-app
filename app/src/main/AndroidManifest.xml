@@ -13,10 +13,10 @@
         android:theme="@style/Theme.SemocApp"
         tools:targetApi="31">
         <activity
-            android:name=".Informacoes"
+            android:name=".Information"
             android:exported="false" />
         <activity
-            android:name=".Inscricoes"
+            android:name=".Inscriptions"
             android:exported="false" />
         <activity
             android:name=".programacao"
@@ -30,6 +30,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.semocapp.Program" />
+        <activity android:name="com.example.semocapp.Programmation" />
     </application>
 
 </manifest>
