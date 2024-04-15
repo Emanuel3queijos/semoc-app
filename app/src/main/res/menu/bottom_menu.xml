@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/bottom_home"
+        android:icon="@drawable/home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/bottom_calendar"
+        android:icon="@drawable/baseline_calendar_month_24"
+        android:title="calendar" />
+
+    <item
+        android:id="@+id/inscription"
+        android:icon="@drawable/baseline_assignment_add_24"
+        android:title="inscription" />
+
+    <item
+        android:id="@+id/information"
+        android:icon="@drawable/info_svgrepo_com"
+        android:title="Profile" />
+
+
+</menu>
