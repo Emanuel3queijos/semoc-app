@@ -30,12 +30,12 @@ public class Information extends AppCompatActivity {
 
                     finish();
                     return true;
-                case R.id.inscription:
+                case R.id.assigment:
                     startActivity(new Intent(getApplicationContext(), Inscriptions.class));
                     overridePendingTransition(R.anim.right, R.anim.left);
                     finish();
                     return true;
-                case R.id.bottom_home:
+                case R.id.bottom_programacao:
                     startActivity(new Intent(getApplicationContext(), MainActivity.class));
                     overridePendingTransition(R.anim.right, R.anim.left);
 

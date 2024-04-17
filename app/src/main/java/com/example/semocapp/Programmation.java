@@ -24,12 +24,12 @@ public class Programmation extends AppCompatActivity {
             switch (item.getItemId()) {
                 case R.id.bottom_calendar:
                     return true;
-                case R.id.bottom_home:
+                case R.id.bottom_programacao:
                     startActivity(new Intent(getApplicationContext(), MainActivity.class));
 
                     finish();
                     return true;
-                case R.id.inscription:
+                case R.id.assigment:
                     startActivity(new Intent(getApplicationContext(), Inscriptions.class));
 
                     finish();

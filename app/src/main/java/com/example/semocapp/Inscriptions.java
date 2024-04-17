@@ -16,13 +16,13 @@ public class Inscriptions extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_inscricoes);
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigation);
-        bottomNavigationView.setSelectedItemId(R.id.inscription);
+        bottomNavigationView.setSelectedItemId(R.id.assigment);
 
 
 //fazer pergunta pro professor do por que  que esse cara so funciona usando o android.nonFinalResIds=false no gradle properties
         bottomNavigationView.setOnItemSelectedListener(item -> {
             switch (item.getItemId()) {
-                case R.id.inscription:
+                case R.id.assigment:
                     return true;
                 case R.id.bottom_calendar:
                     startActivity(new Intent(getApplicationContext(), Programmation.class));
@@ -30,7 +30,7 @@ public class Inscriptions extends AppCompatActivity {
 
                     finish();
                     return true;
-                case R.id.bottom_home:
+                case R.id.bottom_programacao:
                     startActivity(new Intent(getApplicationContext(), MainActivity.class));
                     overridePendingTransition(R.anim.right, R.anim.left);
 

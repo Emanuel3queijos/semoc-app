@@ -18,16 +18,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigation);
-        bottomNavigationView.setSelectedItemId(R.id.bottom_home);
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
 
 
 //fazer pergunta pro professor do por que  que esse cara so funciona usando o android.nonFinalResIds=false no gradle properties
         bottomNavigationView.setOnItemSelectedListener(item -> {
             switch (item.getItemId()) {
-                case R.id.bottom_home:
-                    return true;
-                case R.id.bottom_calendar:
+
+                case R.id.bottom_programacao:
 
                     Intent intent = new Intent(getApplicationContext(), Programmation.class);
                     startActivity(intent);
@@ -35,14 +33,14 @@ public class MainActivity extends AppCompatActivity {
 
                     finish();
                     return true;
-                case R.id.inscription:
+                case R.id.assigment:
                     startActivity(new Intent(getApplicationContext(), Inscriptions.class));
                     overridePendingTransition(R.anim.right, R.anim.left);
 
                     finish();
                     return true;
-                case R.id.information:
-                    startActivity(new Intent(getApplicationContext(), Information.class));
+                case R.id.profile:
+                    startActivity(new Intent(getApplicationContext(), Profile.class));
                     overridePendingTransition(R.anim.right, R.anim.left);
 
                     finish();
