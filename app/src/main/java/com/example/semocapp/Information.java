@@ -15,29 +15,28 @@ public class Information extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_informacoes);
-        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigation);
-        bottomNavigationView.setSelectedItemId(R.id.information);
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
 
 
 //fazer pergunta pro professor do por que  que esse cara so funciona usando o android.nonFinalResIds=false no gradle properties
         bottomNavigationView.setOnItemSelectedListener(item -> {
             switch (item.getItemId()) {
-                case R.id.information:
-                    return true;
-                case R.id.bottom_calendar:
-                    startActivity(new Intent(getApplicationContext(), Programmation.class));
-                    overridePendingTransition(R.anim.right, R.anim.left);
+
+                case R.id.bottom_programacao:
+
+                    Intent intent = new Intent(getApplicationContext(), Programmation.class);
+                    startActivity(intent);
+
 
                     finish();
                     return true;
                 case R.id.assigment:
-                    startActivity(new Intent(getApplicationContext(), Inscriptions.class));
-                    overridePendingTransition(R.anim.right, R.anim.left);
+                    startActivity(new Intent(getApplicationContext(), Assigments.class));
+
                     finish();
                     return true;
-                case R.id.bottom_programacao:
-                    startActivity(new Intent(getApplicationContext(), MainActivity.class));
-                    overridePendingTransition(R.anim.right, R.anim.left);
+                case R.id.profile:
+                    startActivity(new Intent(getApplicationContext(), Profile.class));
 
                     finish();
                     return true;

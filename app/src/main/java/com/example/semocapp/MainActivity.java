@@ -16,10 +16,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-
-
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
-
+        bottomNavigationView.setSelectedItemId(R.id.bottom_programacao);
 
 //fazer pergunta pro professor do por que  que esse cara so funciona usando o android.nonFinalResIds=false no gradle properties
         bottomNavigationView.setOnItemSelectedListener(item -> {
@@ -34,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
                     finish();
                     return true;
                 case R.id.assigment:
-                    startActivity(new Intent(getApplicationContext(), Inscriptions.class));
+                    startActivity(new Intent(getApplicationContext(), Assigments.class));
                     overridePendingTransition(R.anim.right, R.anim.left);
 
                     finish();

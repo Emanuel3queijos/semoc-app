@@ -8,14 +8,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class Inscriptions extends AppCompatActivity {
+public class Assigments extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_inscricoes);
-        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigation);
+        setContentView(R.layout.activity_assigment);
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setSelectedItemId(R.id.assigment);
 
 
@@ -24,24 +24,17 @@ public class Inscriptions extends AppCompatActivity {
             switch (item.getItemId()) {
                 case R.id.assigment:
                     return true;
-                case R.id.bottom_calendar:
-                    startActivity(new Intent(getApplicationContext(), Programmation.class));
-                    overridePendingTransition(R.anim.right, R.anim.left);
-
-                    finish();
-                    return true;
                 case R.id.bottom_programacao:
-                    startActivity(new Intent(getApplicationContext(), MainActivity.class));
-                    overridePendingTransition(R.anim.right, R.anim.left);
+                    startActivity(new Intent(getApplicationContext(), Programmation.class));
 
                     finish();
                     return true;
-                case R.id.information:
-                    startActivity(new Intent(getApplicationContext(), Information.class));
-                    overridePendingTransition(R.anim.right, R.anim.left);
+                case R.id.profile:
+                    startActivity(new Intent(getApplicationContext(), Profile.class));
 
                     finish();
                     return true;
+
             }
             return false;
         });

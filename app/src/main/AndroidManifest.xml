@@ -19,7 +19,7 @@
             android:name=".Information"
             android:exported="false" />
         <activity
-            android:name=".Inscriptions"
+            android:name=".Assigments"
             android:exported="false" />
         <activity
             android:name=".programacao"

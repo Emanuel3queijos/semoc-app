@@ -1,8 +1,9 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+
     <item
         android:id="@+id/bottom_programacao"
-        android:icon="@drawable/baseline_calendar_month_24"
+        android:icon="@drawable/programacao"
         android:title="programacao"
         />
 
