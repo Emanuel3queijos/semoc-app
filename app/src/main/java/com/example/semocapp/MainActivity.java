@@ -24,22 +24,14 @@ public class MainActivity extends AppCompatActivity {
             switch (item.getItemId()) {
 
                 case R.id.bottom_programacao:
-
-                    Intent intent = new Intent(getApplicationContext(), Programmation.class);
-                    startActivity(intent);
-
-
-                    finish();
                     return true;
                 case R.id.assigment:
                     startActivity(new Intent(getApplicationContext(), Assigments.class));
-                    overridePendingTransition(R.anim.right, R.anim.left);
 
                     finish();
                     return true;
                 case R.id.profile:
                     startActivity(new Intent(getApplicationContext(), Profile.class));
-                    overridePendingTransition(R.anim.right, R.anim.left);
 
                     finish();
                     return true;

@@ -25,7 +25,7 @@ public class Assigments extends AppCompatActivity {
                 case R.id.assigment:
                     return true;
                 case R.id.bottom_programacao:
-                    startActivity(new Intent(getApplicationContext(), Programmation.class));
+                    startActivity(new Intent(getApplicationContext(), MainActivity.class));
 
                     finish();
                     return true;

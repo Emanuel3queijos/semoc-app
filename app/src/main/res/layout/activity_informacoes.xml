@@ -8,30 +8,16 @@
     tools:context=".Information">
 
 
-<!--    ajeitar essa imagem, descobrir como que muda ela no xml-->
     <RelativeLayout
+        android:id="@+id/layoutTop"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/white_backgroung2"
-        android:layout_marginBottom="90dp">
-
-
-        <RelativeLayout
-            android:id="@+id/top"
-            android:layout_width="match_parent"
-            android:layout_height="255dp"
-            android:background="@drawable/background">
-
-        <!--            android:background="@color/pinkPurple"-->
-
-
-
-
-            </RelativeLayout>
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="90dp"
+        android:background="@drawable/middle_background">
 
 
     </RelativeLayout>
-
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
@@ -47,6 +33,28 @@
 
         app:menu="@menu/bottom_navigation_menu" />
 
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/white_backgroung2"
+        android:layout_marginBottom="650dp"
+        >
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img"
+        android:layout_marginBottom="650dp"
+        >
+
+
+
+    </RelativeLayout>
 
 
 

@@ -33,7 +33,7 @@ public class Profile extends AppCompatActivity {
                     finish();
                     return true;
                 case R.id.bottom_programacao:
-                    startActivity(new Intent(getApplicationContext(), Programmation.class));
+                    startActivity(new Intent(getApplicationContext(), MainActivity.class));
 
                     finish();
                     return true;

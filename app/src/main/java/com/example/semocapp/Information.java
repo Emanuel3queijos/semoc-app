@@ -24,7 +24,7 @@ public class Information extends AppCompatActivity {
 
                 case R.id.bottom_programacao:
 
-                    Intent intent = new Intent(getApplicationContext(), Programmation.class);
+                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                     startActivity(intent);
 
 
