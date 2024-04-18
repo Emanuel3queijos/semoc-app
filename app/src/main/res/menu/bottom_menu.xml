@@ -14,8 +14,8 @@
         android:title="assigment" />
 
     <item
-        android:id="@+id/profile"
-        android:icon="@drawable/profile"
+        android:id="@+id/informations"
+        android:icon="@drawable/informations"
         android:title="Profile" />
 
 

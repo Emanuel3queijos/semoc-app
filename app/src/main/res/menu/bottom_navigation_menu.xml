@@ -13,9 +13,9 @@
         android:title="assigment" />
 
     <item
-        android:id="@+id/profile"
-        android:icon="@drawable/profile"
-        android:title="Profile" />
+        android:id="@+id/informations"
+        android:icon="@drawable/info_svgrepo_com"
+        android:title="Informations" />
 
 
 </menu>

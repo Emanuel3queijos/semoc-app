@@ -29,7 +29,7 @@ public class Programmation extends AppCompatActivity {
 
                     finish();
                     return true;
-                case R.id.profile:
+                case R.id.informations:
                     startActivity(new Intent(getApplicationContext(), Profile.class));
 
                     finish();
