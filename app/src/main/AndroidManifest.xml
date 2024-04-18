@@ -13,6 +13,12 @@
         android:theme="@style/Theme.SemocApp"
         tools:targetApi="31">
         <activity
+            android:name=".Seminarios"
+            android:exported="false" />
+        <activity
+            android:name=".MesaRedonda"
+            android:exported="false" />
+        <activity
             android:name=".Profile"
             android:exported="false" />
         <activity

@@ -30,7 +30,7 @@ public class Assigments extends AppCompatActivity {
                     finish();
                     return true;
                 case R.id.informations:
-                    startActivity(new Intent(getApplicationContext(), Profile.class));
+                    startActivity(new Intent(getApplicationContext(), Information.class));
 
                     finish();
                     return true;
